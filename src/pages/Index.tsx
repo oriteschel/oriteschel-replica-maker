@@ -13,9 +13,13 @@ const Index = () => {
           <div className="mb-8 flex justify-center">
             <img 
               src="/lovable-uploads/f6887275-7689-4cc3-9642-443ada6bbe3f.png" 
-              alt="Money Coach Portrait" 
+              alt="Orit Eschel - Money Coach Portrait" 
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-white"
             />
+          </div>
+          
+          <div className="mb-4">
+            <p className="text-lg text-gray-600 font-medium">Hi, I'm Orit Eschel</p>
           </div>
           
           <h1 className="font-playfair text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
@@ -37,8 +41,53 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Subheader Section */}
+      {/* Personal Story Section */}
       <div className="bg-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+                My Journey to Financial Freedom
+              </h2>
+            </div>
+            
+            <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed space-y-6">
+              <p>
+                For years, I waited for someone—or something—to tell me I was ready.
+              </p>
+              
+              <p>
+                A PhD, scholarships, years in academia, endless courses, certifications, podcasts, therapy... all amazing. But none of them gave me that moment I longed for: the fireworks that say, "You've arrived. You're enough. You can take up space and earn money doing what you love."
+              </p>
+              
+              <p>
+                It wasn't until I did the inner work—letting go of shame, trusting my intuition, and understanding how my beliefs about money were silently shaping everything—that things really shifted.
+              </p>
+              
+              <p>
+                Sacred Money Archetypes® gave me language for what I'd always felt: that being an idealistic, big-hearted idea machine is a gift—but one that needs structure, support, and safety to actually thrive (and earn).
+              </p>
+              
+              <p>
+                Now? I'm not just a guide through old stories—I'm your tour guide to a whole new money map.
+              </p>
+              
+              <p className="text-xl font-medium text-green-700">
+                The kind that feels aligned, grounded, creative, and true to you.
+              </p>
+              
+              <div className="text-center mt-8 p-6 bg-blue-50 rounded-lg">
+                <p className="text-lg font-medium text-gray-800">
+                  If you're craving meaningful impact, deep connection, and the ability to receive money with ease doing what lights you up... I can't wait to walk beside you. 💛
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Subheader Section */}
+      <div className="bg-gradient-to-r from-blue-100 to-green-100 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="font-playfair text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
@@ -52,7 +101,7 @@ const Index = () => {
       </div>
 
       {/* This Quiz Is For You Section */}
-      <div className="py-16 bg-gradient-to-r from-blue-100 to-green-100">
+      <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             This Quiz Is for You If You…
@@ -81,7 +130,7 @@ const Index = () => {
       </div>
 
       {/* What You'll Learn Section */}
-      <div className="bg-white py-16">
+      <div className="bg-gradient-to-r from-blue-100 to-green-100 py-16">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             Here's What You'll Learn:
@@ -94,7 +143,7 @@ const Index = () => {
               "Where your strengths truly lie—and how to use them without burnout",
               "A fresh way to talk about money that feels grounded, kind, and empowering"
             ].map((item, index) => (
-              <div key={index} className="flex items-start space-x-4 p-6 bg-blue-50 rounded-lg">
+              <div key={index} className="flex items-start space-x-4 p-6 bg-white rounded-lg shadow-md">
                 <div className="bg-blue-200 rounded-full p-2 flex-shrink-0">
                   <Star className="h-5 w-5 text-blue-700" />
                 </div>
@@ -106,7 +155,7 @@ const Index = () => {
       </div>
 
       {/* What Happens Next Section */}
-      <div className="py-16 bg-gradient-to-r from-green-100 to-blue-100">
+      <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             Here's What Happens Next:
@@ -143,10 +192,10 @@ const Index = () => {
       </div>
 
       {/* Final CTA Section */}
-      <div className="bg-white py-16">
+      <div className="bg-gradient-to-r from-blue-100 to-green-100 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="bg-gradient-to-r from-blue-100 to-green-100 p-8 rounded-2xl shadow-lg">
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
               <Heart className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <p className="font-playfair text-2xl font-semibold text-gray-800 mb-4">
                 💛 You deserve to feel peace—not panic—when you think about money.
