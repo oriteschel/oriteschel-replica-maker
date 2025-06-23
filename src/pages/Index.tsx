@@ -9,6 +9,15 @@ const Index = () => {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center max-w-4xl mx-auto">
+          {/* Profile Image */}
+          <div className="mb-8 flex justify-center">
+            <img 
+              src="/lovable-uploads/f6887275-7689-4cc3-9642-443ada6bbe3f.png" 
+              alt="Money Coach Portrait" 
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-white"
+            />
+          </div>
+          
           <h1 className="font-playfair text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
             What If You Could Finally Feel Good About Money—
             <span className="text-teal-600">Without Changing Who You Are?</span>
