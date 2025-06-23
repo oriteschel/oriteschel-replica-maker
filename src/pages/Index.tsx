@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Heart, Star, ArrowRight } from "lucide-react";
@@ -47,7 +46,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-                My Journey to Financial Freedom
+                From Self-Doubt to Permission
               </h2>
             </div>
             
