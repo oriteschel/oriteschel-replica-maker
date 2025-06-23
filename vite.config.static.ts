@@ -10,7 +10,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "./", // Use relative paths for static deployment
+  base: "/oriteschel-replica-maker/", // GitHub Pages repository path
   build: {
     outDir: "dist-static",
     rollupOptions: {
