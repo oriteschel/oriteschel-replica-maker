@@ -9,7 +9,7 @@ const Index = () => {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+          <h1 className="font-playfair text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
             What If You Could Finally Feel Good About Money—
             <span className="text-teal-600">Without Changing Who You Are?</span>
           </h1>
@@ -32,7 +32,7 @@ const Index = () => {
       <div className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
+            <h2 className="font-playfair text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
               You don't need to hustle harder, budget tighter, or "fix" yourself to feel at ease with money.
             </h2>
             <p className="text-xl text-gray-600">
@@ -45,7 +45,7 @@ const Index = () => {
       {/* This Quiz Is For You Section */}
       <div className="py-16 bg-gradient-to-r from-cyan-100 to-teal-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             This Quiz Is for You If You…
           </h2>
           
@@ -74,7 +74,7 @@ const Index = () => {
       {/* What You'll Learn Section */}
       <div className="bg-white py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             Here's What You'll Learn:
           </h2>
           
@@ -99,7 +99,7 @@ const Index = () => {
       {/* What Happens Next Section */}
       <div className="py-16 bg-gradient-to-r from-teal-100 to-cyan-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             Here's What Happens Next:
           </h2>
           
@@ -136,7 +136,7 @@ const Index = () => {
           <div className="text-center max-w-3xl mx-auto">
             <div className="bg-gradient-to-r from-cyan-100 to-teal-100 p-8 rounded-2xl shadow-lg">
               <Heart className="h-12 w-12 text-teal-600 mx-auto mb-4" />
-              <p className="text-2xl font-semibold text-gray-800 mb-4">
+              <p className="font-playfair text-2xl font-semibold text-gray-800 mb-4">
                 💛 You deserve to feel peace—not panic—when you think about money.
               </p>
               <p className="text-xl text-gray-600">
