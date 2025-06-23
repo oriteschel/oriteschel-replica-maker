@@ -131,8 +131,11 @@ const Index = () => {
                 variant="outline" 
                 size="lg" 
                 className="border-2 border-green-400 text-green-700 hover:bg-green-50 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                asChild
               >
-                👉 Book Your Free Crack Your Money Code Call
+                <a href="https://calendar.app.google/pfUChYLxNDSPRZau7" target="_blank" rel="noopener noreferrer">
+                  👉 Book Your Free Crack Your Money Code Call
+                </a>
               </Button>
             </div>
           </div>
