@@ -5,7 +5,7 @@ import { Sparkles, Heart, Star, ArrowRight } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-teal-50">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center max-w-4xl mx-auto">
@@ -20,7 +20,7 @@ const Index = () => {
           
           <h1 className="font-playfair text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
             What If You Could Finally Feel Good About Money—
-            <span className="text-teal-600">Without Changing Who You Are?</span>
+            <span className="text-green-600">Without Changing Who You Are?</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
@@ -29,7 +29,7 @@ const Index = () => {
           
           <Button 
             size="lg" 
-            className="bg-teal-600 hover:bg-teal-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             👉 Take the Quiz
             <ArrowRight className="ml-2 h-5 w-5" />
@@ -52,7 +52,7 @@ const Index = () => {
       </div>
 
       {/* This Quiz Is For You Section */}
-      <div className="py-16 bg-gradient-to-r from-cyan-100 to-teal-100">
+      <div className="py-16 bg-gradient-to-r from-blue-100 to-green-100">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             This Quiz Is for You If You…
@@ -70,7 +70,7 @@ const Index = () => {
               <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-3">
-                    <Sparkles className="h-6 w-6 text-teal-500 mt-1 flex-shrink-0" />
+                    <Sparkles className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
                     <p className="text-gray-700 leading-relaxed">{item}</p>
                   </div>
                 </CardContent>
@@ -94,9 +94,9 @@ const Index = () => {
               "Where your strengths truly lie—and how to use them without burnout",
               "A fresh way to talk about money that feels grounded, kind, and empowering"
             ].map((item, index) => (
-              <div key={index} className="flex items-start space-x-4 p-6 bg-cyan-50 rounded-lg">
-                <div className="bg-cyan-200 rounded-full p-2 flex-shrink-0">
-                  <Star className="h-5 w-5 text-cyan-700" />
+              <div key={index} className="flex items-start space-x-4 p-6 bg-blue-50 rounded-lg">
+                <div className="bg-blue-200 rounded-full p-2 flex-shrink-0">
+                  <Star className="h-5 w-5 text-blue-700" />
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">{item}</p>
               </div>
@@ -106,7 +106,7 @@ const Index = () => {
       </div>
 
       {/* What Happens Next Section */}
-      <div className="py-16 bg-gradient-to-r from-teal-100 to-cyan-100">
+      <div className="py-16 bg-gradient-to-r from-green-100 to-blue-100">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             Here's What Happens Next:
@@ -122,7 +122,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg" 
-                className="bg-teal-600 hover:bg-teal-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 👉 Start the Quiz
               </Button>
@@ -130,7 +130,7 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-2 border-cyan-400 text-cyan-700 hover:bg-cyan-50 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                className="border-2 border-green-400 text-green-700 hover:bg-green-50 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 👉 Book Your Free Crack Your Money Code Call
               </Button>
@@ -143,8 +143,8 @@ const Index = () => {
       <div className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="bg-gradient-to-r from-cyan-100 to-teal-100 p-8 rounded-2xl shadow-lg">
-              <Heart className="h-12 w-12 text-teal-600 mx-auto mb-4" />
+            <div className="bg-gradient-to-r from-blue-100 to-green-100 p-8 rounded-2xl shadow-lg">
+              <Heart className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <p className="font-playfair text-2xl font-semibold text-gray-800 mb-4">
                 💛 You deserve to feel peace—not panic—when you think about money.
               </p>
