@@ -60,6 +60,23 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Static Build & Deployment
+
+This project includes a custom static build configuration for deployment to GitHub Pages:
+
+```sh
+# Build static files
+npm run build:static
+```
+
+**GitHub Pages Deployment:**
+- Automatic deployment on push to main branch
+- Static files are built and deployed via GitHub Actions
+- Go to repository Settings > Pages and set Source to "GitHub Actions"
+
+**Manual Deployment:**
+The static files in `dist-static/` can be uploaded to any hosting service (Netlify, Vercel, S3, etc.)
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/23ed9177-a442-4fd8-a70c-63bd4b44b837) and click on Share -> Publish.
