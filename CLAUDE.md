@@ -39,7 +39,7 @@ npm install       # Install dependencies
 npm run dev       # Start development server
 npm run build     # Build for production (Lovable default)
 npm run build:dev # Build in development mode
-npm run build:static # Build static HTML version (outputs to dist-static/)
+npm run build:static # Build static HTML version using vite.config.static.ts
 npm run lint      # Run ESLint
 npm run preview   # Preview production build
 ```
@@ -77,6 +77,7 @@ A GitHub Actions workflow has been configured to automatically deploy the static
 
 **Files:**
 - `.github/workflows/deploy-pages.yml` - GitHub Actions workflow
+- `vite.config.static.ts` - Static build configuration with relative paths
 - `dist-static/` directory is gitignored (built in CI)
 
 ## Current Page Content
