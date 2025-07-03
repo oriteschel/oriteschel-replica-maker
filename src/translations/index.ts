@@ -5,7 +5,7 @@ export const translations = {
     
     // Hero Section
     heroTitle: "What If You Could Finally Feel Good About Money—",
-    heroTitleHighlight: "Without Changing Who You Are?",
+    heroTitleHighlight: "And YOURSELF!",
     heroSubtitle: "Take the Sacred Money Archetypes® Quiz and discover what's been quietly shaping your money story—so you can make empowered, confident changes that feel aligned with who you truly are.",
     takeQuiz: "👉 Take the Quiz",
     
@@ -68,7 +68,7 @@ export const translations = {
     
     // Hero Section
     heroTitle: "מה אם תוכלי סוף סוף להרגיש טוב עם כסף—",
-    heroTitleHighlight: "מבלי לשנות מי שאת?",
+    heroTitleHighlight: "ואת עצמך!",
     heroSubtitle: "עשי את החידון Sacred Money Archetypes® וגלי מה שקטות מעצב את הסיפור שלך עם כסף—כדי שתוכלי לעשות שינויים מעוצמים ובטוחים שמרגישים מיושרים עם מי שאת באמת.",
     takeQuiz: "👈 עשי את החידון",
     
