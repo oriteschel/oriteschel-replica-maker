@@ -23,8 +23,8 @@ const Index = () => {
             />
           </div>
           
-          <div className="mb-4">
-            <p className="text-lg text-gray-600 font-medium">{getTranslation('hi', language)}</p>
+          <div className="mb-6">
+            <p className="text-2xl md:text-3xl text-gray-600 font-semibold">{getTranslation('hi', language)}</p>
           </div>
           
           <h1 className="font-playfair text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
