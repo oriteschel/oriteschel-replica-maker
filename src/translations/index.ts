@@ -4,59 +4,59 @@ export const translations = {
     hi: "Hi, I'm Orit Eschel",
     
     // Hero Section
-    heroTitle: "What If You Could Finally Feel Good About Money—",
-    heroTitleHighlight: "And YOURSELF!",
-    heroSubtitle: "Take the Sacred Money Archetypes® Quiz and discover what's been quietly shaping your money story—so you can make empowered, confident changes that feel aligned with who you truly are.",
+    heroTitle: "What if you could finally feel good about money -",
+    heroTitleHighlight: "And about yourself?",
+    heroSubtitle: "Take the Sacred Money Archetypes® Quiz and discover what's actually been shaping your money story—so you can make changes that feel right, secure, and aligned with who you truly are.",
     takeQuiz: "👉 Take the Quiz",
     
     // Personal Story
     storyTitle: "From Self-Doubt to Permission",
-    storyP1: "For years, I waited for someone—or something—to tell me I was ready.",
-    storyP2: "A PhD, scholarships, years in academia, endless courses, certifications, podcasts, therapy... all amazing. But none of them gave me that moment I longed for: the fireworks that say, \"You've arrived. You're enough. You can take up space and earn money doing what you love.\"",
-    storyP3: "It wasn't until I did the inner work—letting go of shame, trusting my intuition, and understanding how my beliefs about money were silently shaping everything—that things really shifted.",
-    storyP4: "Sacred Money Archetypes® gave me language for what I'd always felt: that being an idealistic, big-hearted idea machine is a gift—but one that needs structure, support, and safety to actually thrive (and earn).",
-    storyP5: "Now? I'm not just a guide through old stories—I'm your tour guide to a whole new money map.",
-    storyHighlight: "The kind that feels aligned, grounded, creative, and true to you.",
-    storyClosing: "If you're craving meaningful impact, deep connection, and the ability to receive money with ease doing what lights you up... I can't wait to walk beside you. 💛",
+    storyP1: "For years, I waited. For something. For someone, or some kind of sign to tell me I was good enough at what I do—or want to do—and that it's okay to stop striving for perfection, to stop needing to improve, and just begin. AND to earn money for it.",
+    storyP2: "A PhD, scholarships, years in academia, countless courses, certifications, all kinds of therapy… all of it was meaningful and helpful. But that spark that says, \"You've arrived. You're enough. You're allowed to take up space and earn money doing what you love\" - that can't come from anyone else. I felt it over the years, but there comes a point (and for me age was helpful), that shrinking myself and playing the old doubts is just too boring and I got the kick in the butt I need.",
+    storyP3: "I started letting go of shame, owning my spirituality, trusting my intuition, and daring to say what I really want. Things started to shift much faster, and life became more fun despite all the bad things happening around and I could finally be much more active in doing something about it, in the right way for me.",
+    storyP4: "Recently I discovered the Sacred Money Archetypes®, and they gave me validation for something I had always felt: I'm an Alchemist, Connector and Nurturer - idealistic, creative, striving on relationship and deeply caring. And it's absolutely okay to earn money from it. The archetypes also helped me see that this gift needs structure, support, and boundaries to truly thrive (and earn).",
+    storyP5: "In everything I've done, I've always helped people around me move from overthinking and struggle to simplicity, creative joy, and fulfillment. And now I'm doing it in the realm of money.",
+    storyHighlight: "I'm not a financial advisor, but I am an expert in helping you let go of old stories and transform your entire relationship with yourself, with the world, and with money. I also see deeply into your potential and possibilities and I will kick YOUR butt so that you don't give up on yourself.",
+    storyClosing: "If you long for meaningful connection, impact, and the ability to receive money through work that lights you up—I'm right here with you. 💛 The world needs more money in the hands of women who care.",
     
     // Subheader
-    subheaderTitle: "You don't need to hustle harder, budget tighter, or \"fix\" yourself to feel at ease with money.",
-    subheaderSubtitle: "You just need to understand the deeper patterns that have been calling the shots.",
+    subheaderTitle: "You don't need to try harder, spend less, or \"fix yourself\" in order to feel good about money.",
+    subheaderSubtitle: "You just need to understand the deeper patterns that have been running the show—and learn how to work with yourself, not against yourself.",
     
     // Quiz Benefits
-    quizTitle: "This Quiz Is for You If You…",
+    quizTitle: "This quiz is for you if you…",
     quizBenefits: [
-      "Feel torn between dreaming big and staying \"realistic\"",
-      "Struggle with asking for money or setting prices",
-      "Tend to give more than you get back",
-      "Crave a sense of control or security—but also freedom",
-      "Want more beauty, joy, and ease in how you handle money",
-      "Long to feel supported, not judged, when talking about finances"
+      "💭 Swing between big dreams and \"being realistic\"",
+      "💸 Struggle to ask for money or price your work",
+      "🤲 Tend to give more than you receive",
+      "🔐 Crave both control and freedom",
+      "🌺 Want more joy, ease, and confidence in how you handle money",
+      "🫶 Long to talk about money without shame—and to feel supported instead"
     ],
     
     // What You'll Learn
-    learnTitle: "Here's What You'll Learn:",
+    learnTitle: "What your results will reveal:",
     learnPoints: [
-      "What's been driving your money decisions—and what's been secretly holding you back",
-      "How to shift out of stress, guilt, or avoidance and into confidence and clarity",
-      "Where your strengths truly lie—and how to use them without burnout",
-      "A fresh way to talk about money that feels grounded, kind, and empowering"
+      "✨ What's really behind your money decisions—and what's holding you back",
+      "✨ How to move from stress, guilt, or avoidance to confidence and clarity",
+      "✨ Your true strengths—and how to use them without burning out",
+      "✨ A new way to talk about money that feels connected, kind, and empowering"
     ],
     
     // Next Steps
-    nextTitle: "Here's What Happens Next:",
+    nextTitle: "Here's what's next:",
     nextPoints: [
-      "Take the quiz and get instant access to your personal results",
-      "Get a free invitation to go deeper in a no-pressure call with me",
-      "Explore simple shifts that can change your entire relationship with money"
+      "Take the quiz (it takes about 8–10 minutes) and get your Sacred Money Archetypes® right away",
+      "You'll receive an invitation from me for a free \"money story reading\"",
+      "Together we'll explore simple shifts that can completely change your relationship with money"
     ],
-    startQuiz: "👉 Start the Quiz",
-    bookPersonality: "📅 Book Money Personality Reading",
-    bookCrack: "📞 Book Crack Your Money Code Call",
+    startQuiz: "👉 Take the Quiz",
+    bookPersonality: "📅 Book your Money Map Reading",
+    bookCrack: "📞 Book your \"Crack Your Money Code\" Session – approx. 75 minutes, €111",
     
     // Final CTA
-    finalTitle: "💛 You deserve to feel peace—not panic—when you think about money.",
-    finalSubtitle: "Let's help you understand why things have felt hard… and how to make them easier.",
+    finalTitle: "💛 You can change your relationship with money—and with yourself—starting right now.",
+    finalSubtitle: "Let's uncover why it's felt so hard… and how it can become simple, easy, and even joyful.",
     
     // Language Toggle
     hebrew: "עברית",
