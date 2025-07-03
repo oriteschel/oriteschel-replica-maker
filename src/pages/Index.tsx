@@ -33,9 +33,12 @@ const Index = () => {
           <Button 
             size="lg" 
             className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            asChild
           >
-            👉 Take the Quiz
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
+              👉 Take the Quiz
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </Button>
         </div>
       </div>
@@ -167,24 +170,43 @@ const Index = () => {
               <p className="text-lg text-gray-700">Explore simple shifts that can change your entire relationship with money</p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col gap-4 justify-center items-center">
+              {/* Primary CTA - Quiz */}
               <Button 
                 size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                👉 Start the Quiz
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-2 border-green-400 text-green-700 hover:bg-green-50 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 asChild
               >
-                <a href="https://calendar.app.google/pfUChYLxNDSPRZau7" target="_blank" rel="noopener noreferrer">
-                  👉 Book Your Free Crack Your Money Code Call
+                <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
+                  👉 Start the Quiz
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
+              
+              {/* Secondary CTAs - Calendar bookings */}
+              <div className="flex flex-col sm:flex-row gap-3 mt-4">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-2 border-green-400 text-green-700 hover:bg-green-50 text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  asChild
+                >
+                  <a href="https://calendly.com/hello-oriteschel/moneypersonalityreading" target="_blank" rel="noopener noreferrer">
+                    📅 Book Money Personality Reading
+                  </a>
+                </Button>
+                
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-2 border-blue-400 text-blue-700 hover:bg-blue-50 text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  asChild
+                >
+                  <a href="https://calendar.app.google/pfUChYLxNDSPRZau7" target="_blank" rel="noopener noreferrer">
+                    📞 Book Crack Your Money Code Call
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
