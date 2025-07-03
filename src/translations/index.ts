@@ -26,12 +26,12 @@ export const translations = {
     // Quiz Benefits
     quizTitle: "This quiz is for you if you…",
     quizBenefits: [
-      "💭 Swing between big dreams and \"being realistic\"",
-      "💸 Struggle to ask for money or price your work",
-      "🤲 Tend to give more than you receive",
-      "🔐 Crave both control and freedom",
-      "🌺 Want more joy, ease, and confidence in how you handle money",
-      "🫶 Long to talk about money without shame—and to feel supported instead"
+      "Swing between big dreams and \"being realistic\"",
+      "Struggle to ask for money or price your work",
+      "Tend to give more than you receive",
+      "Crave both control and freedom",
+      "Want more joy, ease, and confidence in how you handle money",
+      "Long to talk about money without shame—and to feel supported instead"
     ],
     
     // What You'll Learn
@@ -89,12 +89,12 @@ export const translations = {
     // Quiz Benefits
     quizTitle: "השאלון הזה בשבילך אם את…",
     quizBenefits: [
-      "💭 נעה בין חלומות גדולים לבין מה ש\"מציאותי\"",
-      "💸 מתקשה לבקש כסף או לתמחר את מה שאת מציעה",
-      "🤲 נוטה לתת יותר ממה שאת מקבלת",
-      "🔐 כמהה לביטחון ושליטה אבל גם לחופש",
-      "🌺 רוצה יותר חדווה, קלות וביטחון בהתנהלות הכלכלית שלך",
-      "🫶 חולמת לדבר על כסף בלי שיפוט ולקבל תמיכה במקום זה"
+      "נעה בין חלומות גדולים לבין מה ש\"מציאותי\"",
+      "מתקשה לבקש כסף או לתמחר את מה שאת מציעה",
+      "נוטה לתת יותר ממה שאת מקבלת",
+      "כמהה לביטחון ושליטה אבל גם לחופש",
+      "רוצה יותר חדווה, קלות וביטחון בהתנהלות הכלכלית שלך",
+      "חולמת לדבר על כסף בלי שיפוט ולקבל תמיכה במקום זה"
     ],
     
     // What You'll Learn
