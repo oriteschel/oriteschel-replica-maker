@@ -222,6 +222,32 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer Section */}
+      <div className="bg-gray-50 py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            {/* Services Tagline */}
+            <div className="space-y-2">
+              <p className="text-sm text-gray-700 font-medium">
+                Healing money blocks • Finding your voice • Neurodivergent-friendly 🧠💫
+              </p>
+              <p className="text-sm text-gray-600">
+                You can work with me in English, Hebrew and German and chat in some other languages too!
+              </p>
+            </div>
+            
+            {/* Impressum */}
+            <div className="border-t border-gray-200 pt-6">
+              <div className="text-xs text-gray-500 space-y-1">
+                <p className="font-semibold">Impressum:</p>
+                <p>Telefon: +49 (0)17634645846</p>
+                <p>E-Mail: hello@oriteschel.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
