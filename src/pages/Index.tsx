@@ -1,10 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Heart, Star, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { getTranslation, getTranslationArray } from "@/translations";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const Index = () => {
+  const { language, isRTL } = useLanguage();
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
+    <div className={`min-h-screen bg-gradient-to-b from-blue-50 to-green-50 ${isRTL ? 'rtl' : 'ltr'}`}>
+      <LanguageToggle />
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center max-w-4xl mx-auto">
@@ -18,16 +24,16 @@ const Index = () => {
           </div>
           
           <div className="mb-4">
-            <p className="text-lg text-gray-600 font-medium">Hi, I'm Orit Eschel</p>
+            <p className="text-lg text-gray-600 font-medium">{getTranslation('hi', language)}</p>
           </div>
           
           <h1 className="font-playfair text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
-            What If You Could Finally Feel Good About Money—
-            <span className="text-green-600">Without Changing Who You Are?</span>
+            {getTranslation('heroTitle', language)}
+            <span className="text-green-600">{getTranslation('heroTitleHighlight', language)}</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-            Take the <strong>Sacred Money Archetypes® Quiz</strong> and discover what's been quietly shaping your money story—so you can make empowered, confident changes that feel aligned with who you truly are.
+            {getTranslation('heroSubtitle', language)}
           </p>
           
           <Button 
@@ -36,8 +42,8 @@ const Index = () => {
             asChild
           >
             <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
-              👉 Take the Quiz
-              <ArrowRight className="ml-2 h-5 w-5" />
+              {getTranslation('takeQuiz', language)}
+              <ArrowRight className={`${isRTL ? 'mr-2 rtl-flip' : 'ml-2'} h-5 w-5`} />
             </a>
           </Button>
         </div>
@@ -49,38 +55,38 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-                From Self-Doubt to Permission
+                {getTranslation('storyTitle', language)}
               </h2>
             </div>
             
             <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed space-y-6">
               <p>
-                For years, I waited for someone—or something—to tell me I was ready.
+                {getTranslation('storyP1', language)}
               </p>
               
               <p>
-                A PhD, scholarships, years in academia, endless courses, certifications, podcasts, therapy... all amazing. But none of them gave me that moment I longed for: the fireworks that say, "You've arrived. You're enough. You can take up space and earn money doing what you love."
+                {getTranslation('storyP2', language)}
               </p>
               
               <p>
-                It wasn't until I did the inner work—letting go of shame, trusting my intuition, and understanding how my beliefs about money were silently shaping everything—that things really shifted.
+                {getTranslation('storyP3', language)}
               </p>
               
               <p>
-                Sacred Money Archetypes® gave me language for what I'd always felt: that being an idealistic, big-hearted idea machine is a gift—but one that needs structure, support, and safety to actually thrive (and earn).
+                {getTranslation('storyP4', language)}
               </p>
               
               <p>
-                Now? I'm not just a guide through old stories—I'm your tour guide to a whole new money map.
+                {getTranslation('storyP5', language)}
               </p>
               
               <p className="text-xl font-medium text-green-700">
-                The kind that feels aligned, grounded, creative, and true to you.
+                {getTranslation('storyHighlight', language)}
               </p>
               
               <div className="text-center mt-8 p-6 bg-blue-50 rounded-lg">
                 <p className="text-lg font-medium text-gray-800">
-                  If you're craving meaningful impact, deep connection, and the ability to receive money with ease doing what lights you up... I can't wait to walk beside you. 💛
+                  {getTranslation('storyClosing', language)}
                 </p>
               </div>
             </div>
@@ -93,10 +99,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="font-playfair text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
-              You don't need to hustle harder, budget tighter, or "fix" yourself to feel at ease with money.
+              {getTranslation('subheaderTitle', language)}
             </h2>
             <p className="text-xl text-gray-600">
-              You just need to understand the deeper patterns that have been calling the shots.
+              {getTranslation('subheaderSubtitle', language)}
             </p>
           </div>
         </div>
@@ -106,21 +112,14 @@ const Index = () => {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            This Quiz Is for You If You…
+            {getTranslation('quizTitle', language)}
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[
-              "Feel torn between dreaming big and staying \"realistic\"",
-              "Struggle with asking for money or setting prices",
-              "Tend to give more than you get back",
-              "Crave a sense of control or security—but also freedom",
-              "Want more beauty, joy, and ease in how you handle money",
-              "Long to feel supported, not judged, when talking about finances"
-            ].map((item, index) => (
+            {getTranslationArray('quizBenefits', language).map((item: string, index: number) => (
               <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
-                  <div className="flex items-start space-x-3">
+                  <div className={`flex items-start ${isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'}`}>
                     <Sparkles className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
                     <p className="text-gray-700 leading-relaxed">{item}</p>
                   </div>
@@ -135,17 +134,12 @@ const Index = () => {
       <div className="bg-gradient-to-r from-blue-100 to-green-100 py-16">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            Here's What You'll Learn:
+            {getTranslation('learnTitle', language)}
           </h2>
           
           <div className="max-w-4xl mx-auto space-y-6">
-            {[
-              "What's been driving your money decisions—and what's been secretly holding you back",
-              "How to shift out of stress, guilt, or avoidance and into confidence and clarity",
-              "Where your strengths truly lie—and how to use them without burnout",
-              "A fresh way to talk about money that feels grounded, kind, and empowering"
-            ].map((item, index) => (
-              <div key={index} className="flex items-start space-x-4 p-6 bg-white rounded-lg shadow-md">
+            {getTranslationArray('learnPoints', language).map((item: string, index: number) => (
+              <div key={index} className={`flex items-start ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'} p-6 bg-white rounded-lg shadow-md`}>
                 <div className="bg-blue-200 rounded-full p-2 flex-shrink-0">
                   <Star className="h-5 w-5 text-blue-700" />
                 </div>
@@ -160,14 +154,14 @@ const Index = () => {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            Here's What Happens Next:
+            {getTranslation('nextTitle', language)}
           </h2>
           
           <div className="max-w-3xl mx-auto space-y-8">
             <div className="text-center space-y-4">
-              <p className="text-lg text-gray-700">Take the quiz and get instant access to your personal results</p>
-              <p className="text-lg text-gray-700">Get a free invitation to go deeper in a no-pressure call with me</p>
-              <p className="text-lg text-gray-700">Explore simple shifts that can change your entire relationship with money</p>
+              {getTranslationArray('nextPoints', language).map((point: string, index: number) => (
+                <p key={index} className="text-lg text-gray-700">{point}</p>
+              ))}
             </div>
             
             <div className="flex flex-col gap-4 justify-center items-center">
@@ -178,8 +172,8 @@ const Index = () => {
                 asChild
               >
                 <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
-                  👉 Start the Quiz
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  {getTranslation('startQuiz', language)}
+                  <ArrowRight className={`${isRTL ? 'mr-2 rtl-flip' : 'ml-2'} h-5 w-5`} />
                 </a>
               </Button>
               
@@ -192,7 +186,7 @@ const Index = () => {
                   asChild
                 >
                   <a href="https://calendly.com/hello-oriteschel/moneypersonalityreading" target="_blank" rel="noopener noreferrer">
-                    📅 Book Money Personality Reading
+                    {getTranslation('bookPersonality', language)}
                   </a>
                 </Button>
                 
@@ -203,7 +197,7 @@ const Index = () => {
                   asChild
                 >
                   <a href="https://calendar.app.google/pfUChYLxNDSPRZau7" target="_blank" rel="noopener noreferrer">
-                    📞 Book Crack Your Money Code Call
+                    {getTranslation('bookCrack', language)}
                   </a>
                 </Button>
               </div>
@@ -219,10 +213,10 @@ const Index = () => {
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <Heart className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <p className="font-playfair text-2xl font-semibold text-gray-800 mb-4">
-                💛 You deserve to feel peace—not panic—when you think about money.
+                {getTranslation('finalTitle', language)}
               </p>
               <p className="text-xl text-gray-600">
-                Let's help you understand why things have felt hard… and how to make them easier.
+                {getTranslation('finalSubtitle', language)}
               </p>
             </div>
           </div>
