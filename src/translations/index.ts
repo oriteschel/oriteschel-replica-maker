@@ -119,7 +119,7 @@ export const translations = {
     
     // Final CTA
     finalTitle: "💛 את יכולה לשנות את הקשר שלך עם כסף ועם עצמך כבר עכשיו",
-    finalSubtitle: "בואי נבין למה זה הרגיש קשה… ואיך אפשר להפוך את זה לפשוט, קל ונעים.",
+    finalSubtitle: "",
     
     // Language Toggle
     hebrew: "עברית",
