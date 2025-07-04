@@ -94,6 +94,26 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Middle CTA Section */}
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto">
+            <div className="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl">
+              <Button 
+                size="lg" 
+                className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                asChild
+              >
+                <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
+                  {getTranslation('takeQuiz', language)}
+                  <ArrowRight className={`${isRTL ? 'mr-2 rtl-flip' : 'ml-2'} h-5 w-5`} />
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Subheader Section */}
       <div className="bg-gradient-to-r from-blue-100 to-green-100 py-16">
         <div className="container mx-auto px-4">
@@ -150,25 +170,6 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Middle CTA Section */}
-      <div className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto">
-            <div className="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl">
-              <Button 
-                size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                asChild
-              >
-                <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
-                  {getTranslation('takeQuiz', language)}
-                  <ArrowRight className={`${isRTL ? 'mr-2 rtl-flip' : 'ml-2'} h-5 w-5`} />
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* What Happens Next Section */}
       <div className="py-16 bg-white">
