@@ -94,6 +94,25 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Freebies CTA Section */}
+      <div className="py-12 bg-gradient-to-r from-green-50 to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-2 border-green-500 text-green-700 hover:bg-green-50 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              asChild
+            >
+              <a href="https://app.flodesk.com/form/686a9a70fc443b36ecc82b42" target="_blank" rel="noopener noreferrer">
+                {getTranslation('freebies', language)}
+                <ArrowRight className={`${isRTL ? 'mr-2 rtl-flip' : 'ml-2'} h-5 w-5`} />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+
       {/* Middle CTA Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -256,6 +275,20 @@ const Index = () => {
               <p className="text-sm text-gray-600">
                 You can work with me in English, Hebrew and German and chat in some other languages too!
               </p>
+            </div>
+            
+            {/* Freebies Link */}
+            <div className="py-4">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="border border-green-400 text-green-700 hover:bg-green-50 text-sm px-4 py-2 rounded-full"
+                asChild
+              >
+                <a href="https://app.flodesk.com/form/686a9a70fc443b36ecc82b42" target="_blank" rel="noopener noreferrer">
+                  {getTranslation('freebies', language)}
+                </a>
+              </Button>
             </div>
             
             {/* Impressum */}
