@@ -53,7 +53,7 @@ export const translations = {
     startQuiz: "👉 Take the Quiz",
     bookPersonality: "📅 Book your Money Personality Reading",
     bookCrack: "📞 Book your \"Crack Your Money Code\" Session – 1 hour, €111",
-    freebies: "📚 Get Free Resources & Join My Community",
+    freebies: "Click here for freebies!",
     
     // Final CTA
     finalTitle: "💛 You can change your relationship with money—and with yourself—starting right now.",
@@ -117,7 +117,7 @@ export const translations = {
     startQuiz: "👈 עברי לשאלון",
     bookPersonality: "📅 לקביעת קריאת אישיות הכסף שלך",
     bookCrack: "📞 קבעי שיחת \"פיצוח קוד הכסף\" שלך - שעה, 111 יורו / 444 ש״ח",
-    freebies: "📚 קבלי משאבים חינם והצטרפי לקהילה שלי",
+    freebies: "רוצה מתנות?",
     
     // Final CTA
     finalTitle: "💛 את יכולה לשנות את הקשר שלך עם כסף ועם עצמך כבר עכשיו",
