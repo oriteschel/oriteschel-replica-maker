@@ -9,7 +9,7 @@ const Index = () => {
   const { language, isRTL } = useLanguage();
 
   return (
-    <div className={`min-h-screen bg-gradient-to-b from-primary/30 to-secondary/30 ${isRTL ? 'rtl' : 'ltr'}`}>
+    <div className={`min-h-screen bg-gradient-to-b from-primary/30 to-secondary/30`} dir={isRTL ? 'rtl' : 'ltr'}>
       <LanguageToggle />
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">

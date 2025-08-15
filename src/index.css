@@ -109,7 +109,6 @@
 
   /* RTL Support for Hebrew */
   [dir="rtl"] {
-    text-align: right;
     direction: rtl;
   }
 
@@ -117,19 +116,30 @@
     transform: scaleX(-1);
   }
 
-  [dir="rtl"] .prose {
-    text-align: right;
-  }
-
-  [dir="rtl"] .text-center {
-    text-align: center;
-  }
-
   [dir="rtl"] p,
   [dir="rtl"] h1,
   [dir="rtl"] h2,
   [dir="rtl"] h3,
-  [dir="rtl"] .prose {
+  [dir="rtl"] h4,
+  [dir="rtl"] h5,
+  [dir="rtl"] h6,
+  [dir="rtl"] .prose,
+  [dir="rtl"] .text-left {
+    text-align: right !important;
+  }
+
+  [dir="rtl"] .text-center {
+    text-align: center !important;
+  }
+
+  [dir="rtl"] ul,
+  [dir="rtl"] ol {
+    text-align: right;
+    padding-right: 1.5rem;
+    padding-left: 0;
+  }
+
+  [dir="rtl"] .card-content {
     text-align: right;
   }
 
