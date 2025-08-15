@@ -38,7 +38,7 @@ const Index = () => {
           
           <Button 
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             asChild
           >
             <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
@@ -101,7 +101,7 @@ const Index = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-secondary text-secondary-foreground hover:bg-secondary/10 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-secondary text-secondary hover:bg-secondary/10 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               asChild
             >
               <a href="https://app.flodesk.com/form/686a9a70fc443b36ecc82b42" target="_blank" rel="noopener noreferrer">
@@ -189,7 +189,7 @@ const Index = () => {
               {/* Primary CTA - Quiz */}
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 asChild
               >
                 <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
