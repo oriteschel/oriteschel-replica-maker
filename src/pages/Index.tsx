@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Heart, Star, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { getTranslation, getTranslationArray } from "@/translations";
+import { getTranslation, getTranslationArray, getTestimonials, getTestimonialTitle } from "@/translations";
 import LanguageToggle from "@/components/LanguageToggle";
 
 const Index = () => {
@@ -170,6 +170,33 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Testimonials Section */}
+      <div className="py-16 bg-gradient-to-b from-muted/20 to-background">
+        <div className="container mx-auto px-4">
+          <h2 className="font-poppins text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
+            {getTestimonialTitle(language)}
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {getTestimonials(language).map((testimonial, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="space-y-6">
+                  <div className={`text-4xl ${isRTL ? 'text-right' : 'text-left'} text-accent/30`}>
+                    "
+                  </div>
+                  <blockquote className={`text-lg text-muted-foreground italic leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
+                    {testimonial.quote}
+                  </blockquote>
+                  <div className={`pt-4 border-t border-border ${isRTL ? 'text-right' : 'text-left'}`}>
+                    <cite className="text-sm font-medium text-foreground not-italic">
+                      — {testimonial.author}
+                    </cite>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* What Happens Next Section */}
       <div className="py-16 bg-white">

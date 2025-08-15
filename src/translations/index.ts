@@ -1,3 +1,8 @@
+export interface Testimonial {
+  quote: string;
+  author: string;
+}
+
 export const translations = {
   en: {
     // Header
@@ -41,6 +46,23 @@ export const translations = {
       "✨ How to move from stress, guilt, or avoidance to confidence and clarity",
       "✨ Your true strengths—and how to use them without burning out",
       "✨ A new way to talk about money that feels connected, kind, and empowering"
+    ],
+    
+    // Testimonials
+    testimonialsTitle: "What others say about working with Orit:",
+    testimonials: [
+      {
+        quote: "You are accessible, compassionate, intelligent and non-judgmental. Your method and philosophy are appealing, and you are also a pleasure to speak with and learn from.",
+        author: "Marianne Matyash"
+      },
+      {
+        quote: "Orit has the ability to take my many fears, worries, and doubts and turn them into a driving force for action. Somehow, as if by magic, she transforms my excuses for 'why not' into compelling reasons for 'why yes.'",
+        author: "Neri Livne, journalist, ADHD, funny and intelligent. And also my mother-in-law!"
+      },
+      {
+        quote: "Having you in my life is like having my own personal 'butt kicking angel'. You're gentle, softly spoken and supportive UNTIL you're not! When you're on a mission to get me to see and live my perfection and possibilities—watch out! You don't stop until I GET IT DONE ❤️",
+        author: "Alys"
+      }
     ],
     
     // Next Steps
@@ -106,6 +128,23 @@ export const translations = {
       "✨ דרך חדשה לדבר על כסף שהיא מחוברת, נעימה, ומעצימה"
     ],
     
+    // Testimonials
+    testimonialsTitle: "מה אומרות על העבודה עם אורית:",
+    testimonials: [
+      {
+        quote: "את נגישה, רחומה, חכמה ולא שפטנית. השיטה והפילוסופיה שלך מושכות, וגם נעים לדבר איתך וللمוד ממך.",
+        author: "מריאן מתיאש"
+      },
+      {
+        quote: "לאורית יש יכולת לקחת את כל הפחדים, הדאגות והספקות שלי ולהפוך אותם לכוח מניע לפעולה. איכשהו, כמו בקסם, היא הופכת את התירוצים שלי ל'למה לא' לסיבות משכנעות ל'למה כן'.",
+        author: "נרי ליבנה, עיתונאית, ADHD, מצחיקה וחכמה. וגם חמותי!"
+      },
+      {
+        quote: "שתהיי בחיים שלי זה כמו שיהיה לי 'מלאך בועט' אישי. את עדינה, מדברת בשקט ותומכת עד שאת פתאום לא! כשאת במשימה לגרום לי לראות ולחיות את השלמות והאפשרויות שלי - זהירות! את לא עוצרת עד ש״אני עושה את זה״ ❤️",
+        author: "אליס"
+      }
+    ],
+    
     // Next Steps
     nextTitle: "הצעדים הבאים:",
     nextPoints: [
@@ -127,13 +166,27 @@ export const translations = {
   }
 };
 
-export type TranslationKey = keyof typeof translations.en;
+export type TextTranslationKey = {
+  [K in keyof typeof translations.en]: typeof translations.en[K] extends Testimonial[] ? never : K
+}[keyof typeof translations.en];
 
-export const getTranslation = (key: TranslationKey, language: 'en' | 'he'): string | string[] => {
-  return translations[language][key];
+export type TestimonialTranslationKey = {
+  [K in keyof typeof translations.en]: typeof translations.en[K] extends Testimonial[] ? K : never
+}[keyof typeof translations.en];
+
+export const getTranslation = (key: TextTranslationKey, language: 'en' | 'he'): string | string[] => {
+  return translations[language][key] as string | string[];
 };
 
-export const getTranslationArray = (key: TranslationKey, language: 'en' | 'he'): string[] => {
-  const value = translations[language][key];
+export const getTranslationArray = (key: TextTranslationKey, language: 'en' | 'he'): string[] => {
+  const value = translations[language][key] as string | string[];
   return Array.isArray(value) ? value : [value];
+};
+
+export const getTestimonials = (language: 'en' | 'he'): Testimonial[] => {
+  return translations[language].testimonials;
+};
+
+export const getTestimonialTitle = (language: 'en' | 'he'): string => {
+  return translations[language].testimonialsTitle;
 };
