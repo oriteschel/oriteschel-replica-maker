@@ -9,7 +9,7 @@ const Index = () => {
   const { language, isRTL } = useLanguage();
 
   return (
-    <div className={`min-h-screen bg-gradient-to-b from-purple-100 to-pink-100 ${isRTL ? 'rtl' : 'ltr'}`}>
+    <div className={`min-h-screen bg-gradient-to-b from-primary/30 to-secondary/30 ${isRTL ? 'rtl' : 'ltr'}`}>
       <LanguageToggle />
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
@@ -27,7 +27,7 @@ const Index = () => {
             <p className="text-2xl md:text-3xl text-gray-600 font-semibold">{getTranslation('hi', language)}</p>
           </div>
           
-          <h1 className="font-inter text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+          <h1 className="font-poppins text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
             {getTranslation('heroTitle', language)}
             <span className="text-primary">{getTranslation('heroTitleHighlight', language)}</span>
           </h1>
@@ -50,11 +50,11 @@ const Index = () => {
       </div>
 
       {/* Personal Story Section */}
-      <div className="bg-white py-16">
+      <div className="bg-gradient-to-r from-accent/20 to-primary/20 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="font-inter text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+              <h2 className="font-poppins text-3xl md:text-4xl font-bold text-gray-800 mb-8">
                 {getTranslation('storyTitle', language)}
               </h2>
             </div>
@@ -84,7 +84,7 @@ const Index = () => {
                 {getTranslation('storyHighlight', language)}
               </p>
               
-              <div className="text-center mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg">
+              <div className="text-center mt-8 p-6 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg">
                 <p className="text-lg font-medium text-gray-800">
                   {getTranslation('storyClosing', language)}
                 </p>
@@ -95,7 +95,7 @@ const Index = () => {
       </div>
 
       {/* Freebies CTA Section */}
-      <div className="py-12 bg-gradient-to-r from-cyan-100 to-purple-100">
+      <div className="py-12 bg-gradient-to-r from-accent/30 to-primary/30">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
             <Button 
@@ -113,31 +113,12 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Middle CTA Section */}
-      <div className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto">
-            <div className="bg-gradient-to-r from-purple-50 to-cyan-50 p-8 rounded-2xl">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                asChild
-              >
-                <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
-                  {getTranslation('takeQuiz', language)}
-                  <ArrowRight className={`${isRTL ? 'mr-2 rtl-flip' : 'ml-2'} h-5 w-5`} />
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Subheader Section */}
-      <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-16">
+      <div className="bg-gradient-to-r from-primary/30 to-secondary/30 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="font-inter text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
+            <h2 className="font-poppins text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
               {getTranslation('subheaderTitle', language)}
             </h2>
             <p className="text-xl text-gray-600">
@@ -150,7 +131,7 @@ const Index = () => {
       {/* This Quiz Is For You Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-inter text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="font-poppins text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             {getTranslation('quizTitle', language)}
           </h2>
           
@@ -170,9 +151,9 @@ const Index = () => {
       </div>
 
       {/* What You'll Learn Section */}
-      <div className="bg-gradient-to-r from-cyan-100 to-purple-100 py-16">
+      <div className="bg-gradient-to-r from-accent/30 to-primary/30 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="font-inter text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="font-poppins text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             {getTranslation('learnTitle', language)}
           </h2>
           
@@ -193,7 +174,7 @@ const Index = () => {
       {/* What Happens Next Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-inter text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="font-poppins text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             {getTranslation('nextTitle', language)}
           </h2>
           
@@ -236,12 +217,12 @@ const Index = () => {
       </div>
 
       {/* Final CTA Section */}
-      <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-16">
+      <div className="bg-gradient-to-r from-primary/30 to-secondary/30 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <Heart className="h-12 w-12 text-secondary mx-auto mb-4" />
-              <p className="font-inter text-2xl font-semibold text-gray-800 mb-4">
+              <p className="font-poppins text-2xl font-semibold text-gray-800 mb-4">
                 {getTranslation('finalTitle', language)}
               </p>
               <p className="text-xl text-gray-600">
