@@ -9,7 +9,7 @@ const Index = () => {
   const { language, isRTL } = useLanguage();
 
   return (
-    <div className={`min-h-screen bg-gradient-to-b from-blue-50 to-green-50 ${isRTL ? 'rtl' : 'ltr'}`}>
+    <div className={`min-h-screen bg-gradient-to-b from-purple-100 to-pink-100 ${isRTL ? 'rtl' : 'ltr'}`}>
       <LanguageToggle />
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
@@ -27,9 +27,9 @@ const Index = () => {
             <p className="text-2xl md:text-3xl text-gray-600 font-semibold">{getTranslation('hi', language)}</p>
           </div>
           
-          <h1 className="font-playfair text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+          <h1 className="font-inter text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
             {getTranslation('heroTitle', language)}
-            <span className="text-green-600">{getTranslation('heroTitleHighlight', language)}</span>
+            <span className="text-primary">{getTranslation('heroTitleHighlight', language)}</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
@@ -38,7 +38,7 @@ const Index = () => {
           
           <Button 
             size="lg" 
-            className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             asChild
           >
             <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
@@ -54,7 +54,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+              <h2 className="font-inter text-3xl md:text-4xl font-bold text-gray-800 mb-8">
                 {getTranslation('storyTitle', language)}
               </h2>
             </div>
@@ -80,11 +80,11 @@ const Index = () => {
                 {getTranslation('storyP5', language)}
               </p>
               
-              <p className="text-xl font-medium text-green-700">
+              <p className="text-xl font-medium text-primary">
                 {getTranslation('storyHighlight', language)}
               </p>
               
-              <div className="text-center mt-8 p-6 bg-blue-50 rounded-lg">
+              <div className="text-center mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg">
                 <p className="text-lg font-medium text-gray-800">
                   {getTranslation('storyClosing', language)}
                 </p>
@@ -95,13 +95,13 @@ const Index = () => {
       </div>
 
       {/* Freebies CTA Section */}
-      <div className="py-12 bg-gradient-to-r from-green-50 to-blue-50">
+      <div className="py-12 bg-gradient-to-r from-cyan-100 to-purple-100">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-green-500 text-green-700 hover:bg-green-50 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-secondary text-secondary-foreground hover:bg-secondary/10 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               asChild
             >
               <a href="https://app.flodesk.com/form/686a9a70fc443b36ecc82b42" target="_blank" rel="noopener noreferrer">
@@ -117,10 +117,10 @@ const Index = () => {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
-            <div className="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl">
+            <div className="bg-gradient-to-r from-purple-50 to-cyan-50 p-8 rounded-2xl">
               <Button 
                 size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 asChild
               >
                 <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
@@ -134,10 +134,10 @@ const Index = () => {
       </div>
 
       {/* Subheader Section */}
-      <div className="bg-gradient-to-r from-blue-100 to-green-100 py-16">
+      <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="font-playfair text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
+            <h2 className="font-inter text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
               {getTranslation('subheaderTitle', language)}
             </h2>
             <p className="text-xl text-gray-600">
@@ -150,7 +150,7 @@ const Index = () => {
       {/* This Quiz Is For You Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="font-inter text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             {getTranslation('quizTitle', language)}
           </h2>
           
@@ -159,7 +159,7 @@ const Index = () => {
               <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className={`flex items-start ${isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'}`}>
-                    <Sparkles className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                    <Sparkles className="h-6 w-6 text-secondary mt-1 flex-shrink-0" />
                     <p className="text-gray-700 leading-relaxed">{item}</p>
                   </div>
                 </CardContent>
@@ -170,17 +170,17 @@ const Index = () => {
       </div>
 
       {/* What You'll Learn Section */}
-      <div className="bg-gradient-to-r from-blue-100 to-green-100 py-16">
+      <div className="bg-gradient-to-r from-cyan-100 to-purple-100 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="font-inter text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             {getTranslation('learnTitle', language)}
           </h2>
           
           <div className="max-w-4xl mx-auto space-y-6">
             {getTranslationArray('learnPoints', language).map((item: string, index: number) => (
               <div key={index} className={`flex items-start ${isRTL ? 'space-x-reverse space-x-4' : 'space-x-4'} p-6 bg-white rounded-lg shadow-md`}>
-                <div className="bg-blue-200 rounded-full p-2 flex-shrink-0">
-                  <Star className="h-5 w-5 text-blue-700" />
+                <div className="bg-accent/20 rounded-full p-2 flex-shrink-0">
+                  <Star className="h-5 w-5 text-accent" />
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">{item}</p>
               </div>
@@ -193,7 +193,7 @@ const Index = () => {
       {/* What Happens Next Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="font-inter text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             {getTranslation('nextTitle', language)}
           </h2>
           
@@ -208,7 +208,7 @@ const Index = () => {
               {/* Primary CTA - Quiz */}
               <Button 
                 size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 asChild
               >
                 <a href="https://quiz.oriteshel.com/" target="_blank" rel="noopener noreferrer">
@@ -217,23 +217,12 @@ const Index = () => {
                 </a>
               </Button>
               
-              {/* Secondary CTAs - Calendar bookings */}
-              <div className="flex flex-col sm:flex-row gap-3 mt-4">
+              {/* Secondary CTA - Calendar booking */}
+              <div className="mt-4">
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-green-400 text-green-700 hover:bg-green-50 text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                  asChild
-                >
-                  <a href="https://calendly.com/hello-oriteschel/moneypersonalityreading" target="_blank" rel="noopener noreferrer">
-                    {getTranslation('bookPersonality', language)}
-                  </a>
-                </Button>
-                
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-2 border-blue-400 text-blue-700 hover:bg-blue-50 text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="border-2 border-accent text-accent hover:bg-accent/10 text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   asChild
                 >
                   <a href="https://calendar.app.google/pfUChYLxNDSPRZau7" target="_blank" rel="noopener noreferrer">
@@ -247,12 +236,12 @@ const Index = () => {
       </div>
 
       {/* Final CTA Section */}
-      <div className="bg-gradient-to-r from-blue-100 to-green-100 py-16">
+      <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <Heart className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <p className="font-playfair text-2xl font-semibold text-gray-800 mb-4">
+              <Heart className="h-12 w-12 text-secondary mx-auto mb-4" />
+              <p className="font-inter text-2xl font-semibold text-gray-800 mb-4">
                 {getTranslation('finalTitle', language)}
               </p>
               <p className="text-xl text-gray-600">
@@ -279,12 +268,12 @@ const Index = () => {
             
             {/* Freebies Link */}
             <div className="py-4">
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="border border-green-400 text-green-700 hover:bg-green-50 text-sm px-4 py-2 rounded-full"
-                asChild
-              >
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border border-secondary text-secondary hover:bg-secondary/10 text-sm px-4 py-2 rounded-full"
+                  asChild
+                >
                 <a href="https://app.flodesk.com/form/686a9a70fc443b36ecc82b42" target="_blank" rel="noopener noreferrer">
                   {getTranslation('freebies', language)}
                 </a>
