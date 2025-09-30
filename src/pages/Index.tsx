@@ -4,6 +4,7 @@ import { Sparkles, Heart, Star, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { getTranslation, getTranslationArray, getTestimonials, getTestimonialTitle } from "@/translations";
 import LanguageToggle from "@/components/LanguageToggle";
+import oritProfile from "@/assets/orit-profile.png";
 
 const Index = () => {
   const { language, isRTL } = useLanguage();
@@ -17,8 +18,8 @@ const Index = () => {
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <img 
-              src="/lovable-uploads/f6887275-7689-4cc3-9642-443ada6bbe3f.png" 
-              alt="Orit Eschel - Money Coach Portrait" 
+              src={oritProfile} 
+              alt="Orit Eschel - Money Coach Portrait"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-white"
             />
           </div>
