@@ -5,9 +5,27 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { getTranslation, getTranslationArray, getTestimonials, getTestimonialTitle } from "@/translations";
 import LanguageToggle from "@/components/LanguageToggle";
 import oritProfile from "@/assets/orit-profile.png";
+import { useEffect } from "react";
 
 const Index = () => {
   const { language, isRTL } = useLanguage();
+
+  useEffect(() => {
+    // Load the form script
+    const script = document.createElement('script');
+    script.innerHTML = `
+      window.fd('form', {
+        formId: '68dab1c052fff86eba75ed46',
+        containerEl: '#fd-form-68dab1c052fff86eba75ed46'
+      });
+    `;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className={`min-h-screen bg-gradient-to-b from-primary/30 to-secondary/30`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -287,6 +305,11 @@ const Index = () => {
                   {getTranslation('freebies', language)}
                 </a>
               </Button>
+            </div>
+            
+            {/* Form */}
+            <div className="py-4">
+              <div id="fd-form-68dab1c052fff86eba75ed46"></div>
             </div>
             
             {/* Impressum */}
